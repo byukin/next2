@@ -91,7 +91,6 @@ h3 {
 }
 .limit {
   max-width: 1440px;
-  min-width: 960px;
   margin: 0 auto;
   position: relative;
 }
@@ -109,7 +108,7 @@ h3 {
   width: 140px;
   height: 80px;
   margin-top: -10px;
-  margin-right: 80px;
+  margin-right: 140px;
   background: url("icons/logo.svg");
   background-repeat: no-repeat;
   display: inline-block;
@@ -123,7 +122,7 @@ h3 {
   text-transform: uppercase;
   vertical-align: top;
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 90px;
   margin-top: 10px;
 }
 .header-anchors__item {
@@ -143,7 +142,7 @@ h3 {
   font-family: "Play";
   font-size: 0.75rem;
   text-transform: uppercase;
-  margin-right: 30px;
+  margin-right: 100px;
   margin-top: 10px;
 }
 .header-geo-labels__city {
@@ -151,12 +150,15 @@ h3 {
   margin-left: 5px;
   margin-right: 5px;
   border-bottom: 1px dotted #fff;
+  cursor: pointer;
 }
 .header-geo-labels__city.active {
   border-bottom: none;
+  cursor: default;
 }
 .header-geo-labels__phone {
   font-size: 1.4375rem;
+  margin-top: 3px;
 }
 .header-geo-labels__phone span {
   font-size: 0.8rem;
@@ -428,9 +430,15 @@ h3 {
     font-size: 46px;
   }
 }
-@media (min-width: 1360px) {
-  h1 {
-    font-size: 46px;
+@media (max-width: 1440px) {
+  .header-logo {
+    margin-right: 60px;
+  }
+  .header-anchors {
+    margin-right: 60px;
+  }
+  .header-geo {
+    margin-right: 60px;
   }
 }
 @media (max-width: 1279px) {
@@ -440,13 +448,69 @@ h3 {
   h2 {
     font-size: 24px;
   }
+  .header-logo {
+    margin-right: 40px;
+    font-size: 12px;
+  }
+  .header-anchors {
+    margin-right: 40px;
+    font-size: 12px;
+  }
+  .header-geo {
+    margin-right: 40px;
+    font-size: 12px;
+  }
+  .header-contact {
+    font-size: 12px;
+  }
 }
 @media (max-width: 1140px) {
   h1 {
     font-size: 36px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .header-logo {
+    width: 120px;
+    margin-right: 30px;
+  }
+  .header-anchors {
+    margin-right: 30px;
+    font-size: 11px;
+  }
+  .header-anchors__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-geo {
+    margin-right: 30px;
+    font-size: 11px;
+  }
+  .header-contact {
+    font-size: 11px;
+  }
+  .main-content-1-left {
+    width: 35%;
+  }
+  .main-content-1-right {
+    width: 65%;
+  }
+  .main-content-form {
+    width: 240px;
+  }
+  .main-content-form__input {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+  .main-content-form__button {
+    font-size: 10px;
+  }
+  .main-content-form__button_filled {
+    font-size: 10px;
+  }
+  .main-content-1-links__page {
+    font-size: 12px;
   }
 }
 @media (max-width: 1024px) {
@@ -459,7 +523,10 @@ h3 {
     font-size: 30px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .main-content-holder {
+    bottom: 20px;
   }
 }
 @media (min-height: 860px) {
