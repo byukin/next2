@@ -9,7 +9,89 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(href="styles/default/css/style.css",rel="stylesheet")
 	body
-
+		.layout
+			section.header-block
+				.limit.clearfix
+					.header-logo
+					.header-anchors
+						ul
+							li.header-anchors__item
+								a(href="").active Продвижение<br>сайтов под ключ
+							li.header-anchors__item
+								a(href="") Классическое<br>продвижение сайтов
+							li.header-anchors__item
+								a(href="") Разработка<br>сайтов
+					.header-geo
+						.header-geo-labels
+							ul
+								li.header-geo-labels__city Москва
+								li.header-geo-labels__city.active Казань
+								li.header-geo-labels__city Россия
+							.header-geo-labels__phone <span>+7 (843)</span> 555 05 05
+					.header-contact
+						.header-modals
+							.header-modals__search <i class="fa fa-search" aria-hidden="true"></i>
+							.header-modals__menu
+						.header-contact__item
+							a(href="").header-contact__link_call-me Перезвоните мне
+						.header-contact__item
+							a(href="").header-contact__link Контакты
+			section.main-content-1.active(data-page-scroll)
+				.main-content-holder.limit.clearfix
+					.main-content-1-left
+						h1 Решаем задачу увеличения продаж
+						.main-content-1__subtitle от 35 000 ₽ в месяц
+						form(action="").main-content-form
+								.main-content-form__title Готовы<br>к лучшим результам?
+								input(type="text" placeholder="Имя").main-content-form__input
+								input(type="text" placeholder="Телефон").main-content-form__input
+								input(type="text" placeholder="Электронный адрес").main-content-form__input
+								input(type="text" placeholder="Ссылка на сайт").main-content-form__input
+								.main-content-form__submit.clearfix
+									button.main-content-form__button Оставить заявку
+									button.main-content-form__button_filled Хочу со скидкой
+					.main-content-1-right
+						.main-content-1-advantages
+							.main-content-1-advantages__item
+								h2 Ярко
+								| Сделаем так, чтобы среди всех Ваших конкурентов заметили именно Вас
+							.main-content-1-advantages__item
+								h2 Эффективно
+								| Задействуем все инструменты для достижения максимальных результатов
+							.main-content-1-advantages__item
+								h2 Ответственно
+								| Работаем в соответствии с зафиксированными в договоре гарантированными показателями эффективности
+						.main-content-1-links.clearfix
+							.main-content-1-links__pages
+								.main-content-1-links__label Узнать больше
+								ul
+									li.main-content-1-links__page
+										a(href="") Как это работает
+									li.main-content-1-links__page
+										a(href="") Почему это работает
+									li.main-content-1-links__page
+										a(href="") Портфолио
+							.main-content-1-links__news
+								.main-content-1-links__label Актуально
+								.main-content-1-links__news-item
+									.main-content-1-links__news-date 11/12
+									.main-content-1-links__news-text
+										a(href="") Ребрендинг Next Promo: как это было и чем это закончилось
+							.main-content-1-links__partners
+								.main-content-1-links__label С нами работают
+			section.footer-block
+				.footer.clearfix
+					.footer-social
+						ul
+							li.footer-social__item
+								a(href="").footer-social__link <i class="fa fa-vk" aria-hidden="true"></i>
+							li.footer-social__item
+								a(href="").footer-social__link <i class="fa fa-twitter" aria-hidden="true"></i>
+							li.footer-social__item
+								a(href="").footer-social__link <i class="fa fa-facebook" aria-hidden="true"></i>
+							li.footer-social__item
+								a(href="").footer-social__link <i class="fa fa-instagram" aria-hidden="true"></i>
+					.footer-copyright &copy; Next-promo &mdash; 2017
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 		script(src="https://use.fontawesome.com/e04476514d.js")
 
