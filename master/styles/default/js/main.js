@@ -1,18 +1,19 @@
 $(document).ready(function() {
-	$("[data-custom-scroll]").mCustomScrollbar({
-		live:true,
-		theme:"rounded"
-	});
-	appSite.bindSlickSlider();
+
+	appSite.init();
 });
 
 
 var appSite = {
 	init: function() {
 		appSite.bindCustomScrollBars();
+		appSite.bindCustomScrollBars();
 	},
 	bindCustomScrollBars: function () {
-  		$(".news-block-article__text").customScrollbar();
+  		$("[data-custom-scroll]").mCustomScrollbar({
+			live:true,
+			theme:"rounded"
+		});
 	},
 	bindSlickSlider: function () {
 		$('[data-slick-slider]').slick({
