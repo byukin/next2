@@ -7,7 +7,7 @@ $(document).ready(function() {
 var appSite = {
 	init: function() {
 		appSite.bindCustomScrollBars();
-		appSite.bindCustomScrollBars();
+		appSite.bindSlickSlider();
 	},
 	bindCustomScrollBars: function () {
   		$("[data-custom-scroll]").mCustomScrollbar({
@@ -40,15 +40,6 @@ var appSite = {
 			  	adaptiveHeight: true,
 			  	prevArrow: '.potfolio-sites-previous',
 			  	nextArrow: '.potfolio-sites-next',
-			  	responsive: [
-				    {
-				      breakpoint: 1140,
-				      settings: {
-				        slidesToShow: 1,
-				        slidesToScroll: 1
-				      }
-				    },
-				  ]
 		});
 	},
 };
