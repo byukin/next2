@@ -38,8 +38,8 @@ var appSite = {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 			  	adaptiveHeight: true,
-			  	prevArrow: '.potfolio-sites-previous',
-			  	nextArrow: '.potfolio-sites-next',
+			  	prevArrow: '.potfolio-sites-seo-previous',
+			  	nextArrow: '.potfolio-sites-seo-next',
 		});
 	},
 };
